@@ -22,7 +22,5 @@ namespace ConsoleApp1
 
         void LoseGame();
     }
-
-    
 }
 

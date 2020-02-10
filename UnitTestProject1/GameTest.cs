@@ -11,15 +11,14 @@ namespace UnitTestProject1
     {
         [TestCase(5, 5, 10, 9)]
         [TestCase(5, 4, 10, 0)]
-        [TestCase(1, 1, 3, 3)]
-        public void TestMethod1(
+        [TestCase(1, 1, 3, 2)]
+        public void GameRoundTest(
             int userNumber, 
             int gameRuleNumber, 
             int maxAttemps,
             int expectedMoney)
         {
             var consoleHelperMock = new Mock<IConsoleHelper>();
-
             consoleHelperMock
                 .Setup(x => x.ReadNumberFromConsole())
                 .Returns(userNumber);
@@ -38,5 +37,6 @@ namespace UnitTestProject1
 
             Assert.AreEqual(expectedMoney, user.Money);
         }
+
     }
 }

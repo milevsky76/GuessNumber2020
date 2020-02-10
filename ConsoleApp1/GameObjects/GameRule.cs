@@ -12,5 +12,14 @@ namespace ConsoleApp1
         public int Number;
         public int MinNumber;
         public int MaxNumber;
+        public SoHard SoHard;
+        public TypeOfGame TypeOfGame;
+    }
+
+    public enum SoHard
+    {
+        easy,
+        normal,
+        hard
     }
 }

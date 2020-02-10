@@ -8,6 +8,16 @@ namespace ConsoleApp1
 {
     interface IGameSetuper
     {
-        GameRule GenerateGameRule();
+        TypeOfGame GetTypeOfGame();
+
+        GameRule UserCreateGameRule();
+
+        GameRule AutoGenerateGameRule();
+    }
+
+    public enum TypeOfGame
+    {
+        WithBot,
+        WithUser
     }
 }
